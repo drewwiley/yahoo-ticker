@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yahoo Finance Ticker - API - AJAX - Enpoint - Intro</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" src="http//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+   
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>What stock(s) do you want to search for?</h1>
+
+                <form class="yahoo-form form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="symbol">Stock Symbol</label>
+                    <div class="input-group">
+                          <input type="text" class="form-control" id="symbol" placeholder="Enter symbols, separate with comma">
+                    </div> 
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="float:right">Get my quotes!</button>
+                </form>
+				<div id="main-table">
+                <table class="table table-striped table-bordered">
+                	<thead>
+						<tr>
+							<th style="background-color:green">Stock Symbol</th>
+							<th>Company name</th>
+							<th>Ask Price</th>
+							<th>Bid Price</th>
+							<th>Daily Change</th>
+							<th><button type="button" class="btn btn-default add-stock to-all"><strong>+ Add all</strong></button></th>
+						</tr>
+
+                	</thead>
+
+                	<tbody class="yahoo-body">
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+
+                	</tbody>
+				
+				<button type="button" class="btn btn-info view-watch">View watchlist</button>
+				</table>
+				</div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
